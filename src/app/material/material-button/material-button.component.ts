@@ -17,5 +17,8 @@ export class MaterialButtonComponent implements OnInit {
       this.formulario.valido=false;
     }, 6000);
   }
+  onClick($event){
+    console.log('Evento de click', $event);
+  }
 
 }

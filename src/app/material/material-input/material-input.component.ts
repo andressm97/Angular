@@ -17,5 +17,11 @@ export class MaterialInputComponent implements OnInit {
       this.usuario.nombre='Lara'
     }, 6000);
   }
+  onKeyUp($event){
+      console.log('keyup',$event)
+  }
+  onBlur($event:FocusEvent){
+      console.log('blur',$event)
+  }
 
 }
