@@ -50,5 +50,8 @@ export class MaterialListComponent implements OnInit {
       }
     }, 5000);
   }
+  onMouseClick($event: Estudiante){
+    console.log('Click on',$event.nombre)
+  }
 
 }
