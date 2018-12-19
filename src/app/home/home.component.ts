@@ -13,8 +13,22 @@ export class HomeComponent implements OnInit {
     
   }
   apod: Apod;
+  error: string;
   ngOnInit() {
-    this.apod=this.nasaApi.getApod();
+    this.nasaApi.getApod()
+    .subscribe((data:Apod)=>{
+      setTimeout(() => {
+        this.apod=data;  
+      }, 1500);
+      
+    },error =>{
+      setTimeout(() => {
+        console.log('ERROR AL CONECTAR AL SERVIDOR');
+        this.error='Error weeeeeee';
+  
+      }, 2000);
+          }
+      )
   }
 
 }
