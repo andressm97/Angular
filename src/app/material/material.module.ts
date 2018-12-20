@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialDemoComponent } from './material-demo/material-demo.component';
+import { FormsModule } from "@angular/forms";
 import {MatToolbarModule,
         MatButtonModule,
         MatIconModule,
@@ -10,6 +11,7 @@ import {MatToolbarModule,
         MatList,
         MatCardModule,
         MatProgressSpinnerModule,
+        MatSelectModule
       } from '@angular/material';
 import { MaterialButtonComponent } from './material-button/material-button.component';
 import { MaterialInputComponent } from './material-input/material-input.component';
@@ -27,7 +29,9 @@ import { ItemEstudianteComponent } from './material-list/item-estudiante/item-es
     MatInputModule,
     MatListModule,
     MatCardModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FormsModule,
+    MatSelectModule
   ],exports:[
     MatToolbarModule,
     MatButtonModule,
@@ -36,7 +40,9 @@ import { ItemEstudianteComponent } from './material-list/item-estudiante/item-es
     MatInputModule,
     MatListModule,
     MatCardModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FormsModule,
+    MatSelectModule
 
   ]
 })

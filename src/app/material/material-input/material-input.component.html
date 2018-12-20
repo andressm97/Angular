@@ -3,7 +3,7 @@
   <mat-form-field>
     <input matInput type="text"
      placeholder="nombre"
-    [value]="usuario.nombre"
+    [(ngModel)]="usuario.nombre"
     (keyup)="onKeyUp($event)"
     (blur)="onBlur($event)"
     >
@@ -11,6 +11,9 @@
 
   
 </div>
+<pre>
+  {{usuario | json}}
+</pre>
 
 <h3>prefijos y Sufijos</h3>
 <div>
